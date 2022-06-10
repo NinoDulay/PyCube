@@ -46,7 +46,7 @@ class PyCube:
         A PyCube Object
         PyCube.displayCube() - shows cube
         PyCube.runAlgo(algo, splitter=' ') - run rubik's cube algorithms
-        PyCube.showMoves() - shows all possible algorithm
+        PyCube.showMoves() - shows all possible algorithm to use
         """
     @staticmethod
     def showMoves():
@@ -69,6 +69,10 @@ class PyCube:
         print("D2' - Rotate Down 90° Two Times")
         print("F2 - Rotate Front 90° Two Times")
         print("B2' - Rotate Back 90° Two Times")
+        print("X - Rotate the Cube in X Axis 90° Clockwise")
+        print("X' - Rotate the Cube in X Axis 90° Counter Clockwise")
+        print("Y - Rotate the Cube in Y Axis 90° Clockwise")
+        print("Y' - Rotate the Cube in Y Axis 90° Counter Clockwise")
 
     def displayCube(self, colored=False):
         #print(f"{' '*5}{self.faces[0]}")
@@ -409,6 +413,7 @@ class PyCube:
 
         self.updateCube()
 
+# Sample code
 def main():
     #PyCube.showMoves()
     cube1 = PyCube()
